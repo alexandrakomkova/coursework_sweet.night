@@ -1,0 +1,20 @@
+header
+{
+    margin: -10px;
+    display: flex;
+    flex-direction: row;
+    height: 95px;
+    min-width: 360px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    font-family: 'Satisfy', cursive;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+body
+{
+  background-color: #f2f2f2;
+}
