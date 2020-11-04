@@ -22,12 +22,256 @@ body
 {
   margin: 0px;
   background-color: #f2f2f2;
+  min-width: 320px;
 }
-.container_full_screen
+/*.shadow_full_screen
 {
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
   width: 100%;
+  height: 700px;
+}*/
 
-  height: 90vh;
-  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/intro.jpg") center;
+#container_full_screen_1
+{
+  display: flex;
+  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/intro.jpg") no-repeat center center;
   background-size: cover;
+  width: 100%;
+  height: 700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#container_full_screen_1::before
+{
+
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*#container_full_screen > .subtext_full_screen
+{
+  font-family: 'Bellota Text', cursive;
+  font-size: 35px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #F2F2F2;
+
+}
+#container_full_screen > .text_full_screen
+{
+  font-family: 'Bellota Text', cursive;
+  font-size: 90px;
+  line-height: 113px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}*/
+#container_half_screen
+{
+  display: flex;
+  flex-direction: row;
+}
+
+
+ #img_half_screen
+{
+  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/block2.jpg") no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  height: 618px;
+}
+#img_half_screen::before
+{
+
+  content: " ";
+  position: absolute;
+  width: 50%;
+  height: 618px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+#container_full_screen_2
+{
+  display: flex;
+  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/intro2.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#container_full_screen_2::before
+{
+
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#img_half_screen_2
+{
+ background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/block3.jpg") no-repeat center center;
+ background-size: cover;
+ width: 50%;
+ height: 618px;
+}
+#img_half_screen_2::before
+{
+
+  content: " ";
+  position: absolute;
+  width: 50%;
+  height: 618px;
+  background: rgba(0, 0, 0, 0.4);
+}
+#container_full_screen_3
+{
+  display: flex;
+  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/intro3.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#container_full_screen_3::before
+{
+
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#img_half_screen_3
+{
+ background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/block4.jpg") no-repeat center center;
+ background-size: cover;
+ width: 50%;
+ height: 618px;
+}
+#img_half_screen_3::before
+{
+  content: " ";
+  position: absolute;
+  width: 50%;
+  height: 618px;
+  background: rgba(0, 0, 0, 0.3);
+}
+#text_half_screen
+{
+  width: 50%;
+  height: 618px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+
+}
+#title
+{
+  font-family: 'Bellota Text', cursive;
+  color: #000000;
+  font-size: 38px;
+
+}
+#subtitle, #after_title
+{
+  font-family: 'Bellota Text', cursive;
+  color: #000000;
+  font-size: 24px;
+
+}
+#main_text
+{
+  font-family: 'Merriweather', serif;
+  color: #000000;
+  font-size: 18px;
+  width: 35%;
+  text-align: center;
+
+}
+footer
+{
+
+    display: flex;
+    flex-direction: row;
+    height: 195px;
+    min-width: 360px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    font-family: 'Satisfy', cursive;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+@media screen and (max-width: 768px)
+{
+  header
+  {
+    height: 60px;
+  }
+  #container_full_screen_1, #container_full_screen_2, #container_full_screen_3,
+  #container_full_screen_1::before, #container_full_screen_2::before, #container_full_screen_3::before
+  {
+    height: 385px;
+  }
+  #container_half_screen
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #container_half_screen > #img_half_screen, #img_half_screen_2, #img_half_screen_3,
+  #img_half_screen_1::before, #img_half_screen_2::before, #img_half_screen_3::before
+  {
+    display: none;
+  }
+  #text_half_screen
+  {
+    margin: 0px auto;
+    height: 280px;
+    width: 100%;
+  }
+  #main_text
+  {
+    font-family: 'Merriweather', serif;
+    color: #000000;
+    font-size: 18px;
+    width: 85%;
+    text-align: center;
+
+  }
+  footer
+  {
+    height: 80px;
+  }
+
+}
+
+@media screen and (max-width: 400px)
+{
+  header
+  {
+    height: 60px;
+  }
+
+  footer
+  {
+    height: 80px;
+  }
+
+
 }

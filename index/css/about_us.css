@@ -1,0 +1,201 @@
+header
+{
+
+    display: flex;
+    flex-direction: row;
+    height: 95px;
+    min-width: 360px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    font-family: 'Satisfy', cursive;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+*
+{
+  box-sizing: border-box;
+}
+body
+{
+  margin: 0px;
+  background-color: #f2f2f2;
+  min-width: 320px;
+}
+footer
+{
+
+    display: flex;
+    flex-direction: row;
+    height: 195px;
+    min-width: 360px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    font-family: 'Satisfy', cursive;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#container_horizontal_screen
+{
+  display: flex;
+  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/bc.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 385px;
+
+}
+#container_horizontal_screen::before
+{
+
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 385px;
+  background: rgba(0, 0, 0, 0.35);
+}
+#text_horizontal_screen
+{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  margin: 0px 224px 0px 224px;
+
+  height: 332px;
+  font-family: 'Bellota Text', cursive;
+  color: #000000;
+  font-size: 30px;
+}
+#container_half_screen
+{
+  display: flex;
+  flex-direction: row;
+}
+#img_half_screen
+{
+ background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/photo-1571863005528-d4b29307e35a.jpg") no-repeat center center;
+ background-size: cover;
+ width: 50%;
+ height: 618px;
+}
+#img_half_screen::before
+{
+
+ content: " ";
+ position: absolute;
+ width: 50%;
+ height: 618px;
+ background: rgba(0, 0, 0, 0.3);
+}
+#text_half_screen
+{
+ width: 50%;
+ height: 618px;
+}
+
+#img_half_screen_2
+{
+ background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/pexels-juan-c-palacios-3438708.jpg") no-repeat center center;
+ background-size: cover;
+ width: 50%;
+ height: 618px;
+}
+#img_half_screen_2::before
+{
+
+  content: " ";
+  position: absolute;
+  width: 50%;
+  height: 618px;
+  background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 768px)
+{
+  header
+  {
+    height: 60px;
+  }
+
+  footer
+  {
+    height: 80px;
+  }
+  #container_horizontal_screen, #container_horizontal_screen::before
+  {
+    height: 285px;
+  }
+
+  #text_horizontal_screen
+  {
+      font-size: 24px;
+      align-items:center;
+      justify-content: center;
+      margin: 0px 124px 0px 124px;
+  }
+  #container_half_screen
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #container_half_screen > #img_half_screen, #img_half_screen_2,
+  #img_half_screen::before, #img_half_screen_2::before
+  {
+    width: 100%;
+    height: 385px;
+  }
+  #text_half_screen
+  {
+    height: 280px;
+  }
+
+}
+
+@media screen and (max-width: 400px)
+{
+  header
+  {
+    height: 60px;
+  }
+
+  footer
+  {
+    height: 80px;
+  }
+  #container_horizontal_screen, #container_horizontal_screen::before
+  {
+    height: 175px;
+  }
+  #text_horizontal_screen
+  {
+      font-size: 20px;
+      align-items:center;
+      justify-content: center;
+      text-align: center;
+      margin: 0px 20px 0px 20px;
+  }
+  #container_half_screen
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #container_half_screen > #img_half_screen, #img_half_screen_2,
+  #img_half_screen::before, #img_half_screen_2::before
+  {
+      width: 100%;
+      height: 385px;
+  }
+  #text_half_screen
+  {
+    height: 280px;
+  }
+
+}
