@@ -34,14 +34,23 @@ body
 
 #container_full_screen_1
 {
-  display: flex;
+/*  display: flex;
   background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/intro.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 700px;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around;*/
+  display: flex;
+  background: url("../img/intro.jpg");
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #container_full_screen_1::before
 {
@@ -50,27 +59,79 @@ body
   position: absolute;
   width: 100%;
   height: 700px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
 }
 
-/*#container_full_screen > .subtext_full_screen
+#text_full_screen
 {
-  font-family: 'Bellota Text', cursive;
-  font-size: 35px;
-  line-height: 44px;
-  text-transform: uppercase;
-  color: #F2F2F2;
-
-}
-#container_full_screen > .text_full_screen
-{
-  font-family: 'Bellota Text', cursive;
-  font-size: 90px;
-  line-height: 113px;
+  position: absolute;
+  width: 100%;
+  margin: 200px auto 0px auto;
+  height: 500px;
   text-align: center;
+}
+p
+{
+  margin: 0px auto;
   text-transform: uppercase;
   color: #F2F2F2;
-}*/
+  font: italic normal normal 35px 'Bellota Text', cursive;
+}
+h2
+{
+margin: 0px auto;
+  text-transform: uppercase;
+  color: #F2F2F2;
+  font: italic normal normal 90px 'Bellota Text', cursive;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 10px 50px;
+/*  margin: 10px 20px;*/
+/*  padding: 20px 30px;*/
+  margin: 10px 40% 30px 40%;
+  position: relative;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  background: none;
+  font: normal normal normal 35px 'Bellota Text', cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+a:before {
+  bottom: 0;
+  left: 0;
+  border-left: 3px solid #F2F2F2;
+  border-top: 3px solid #F2F2F2;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+a:after {
+  top: 0;
+  right: 0;
+  border-right: 3px solid #F2F2F2;
+  border-bottom: 3px solid #F2F2F2;
+  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+a:hover:before,
+a:hover:after{
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+a:hover {background: rgba(255, 255, 255, 0.2);}
 #container_half_screen
 {
   display: flex;
@@ -80,7 +141,7 @@ body
 
  #img_half_screen
 {
-  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/block2.jpg") no-repeat center center;
+  background: url("../img/block2.jpg") no-repeat center center;
   background-size: cover;
   width: 50%;
   height: 618px;
@@ -99,13 +160,18 @@ body
 #container_full_screen_2
 {
   display: flex;
-  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/intro2.png") no-repeat center center;
-  background-size: cover;
+  background: url("../img/intro2.png");
+  position	: relative;
   width: 100%;
   height: 700px;
-  flex-direction: column;
+  /*flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around;*/
+
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #container_full_screen_2::before
 {
@@ -114,12 +180,12 @@ body
   position: absolute;
   width: 100%;
   height: 700px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #img_half_screen_2
 {
- background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/block3.jpg") no-repeat center center;
+ background: url("../img/block3.jpg") no-repeat center center;
  background-size: cover;
  width: 50%;
  height: 618px;
@@ -136,13 +202,16 @@ body
 #container_full_screen_3
 {
   display: flex;
-  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/intro3.jpg") no-repeat center center;
-  background-size: cover;
+  background: url("../img/photo-1590846406792-0adc7f938f1d.jpg");
   width: 100%;
   height: 700px;
-  flex-direction: column;
+  /*flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around;*/
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #container_full_screen_3::before
 {
@@ -151,12 +220,12 @@ body
   position: absolute;
   width: 100%;
   height: 700px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #img_half_screen_3
 {
- background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/block4.jpg") no-repeat center center;
+ background: url("../img/photo-1541086095944-f4b5412d3666.jpg") no-repeat center center;
  background-size: cover;
  width: 50%;
  height: 618px;
@@ -181,30 +250,28 @@ body
 }
 #title
 {
-  font-family: 'Bellota Text', cursive;
+  font: italic normal normal 38px 'Bellota Text', cursive;
   color: #000000;
-  font-size: 38px;
-
 }
 #subtitle, #after_title
 {
-  font-family: 'Bellota Text', cursive;
+  font: italic normal normal 24px 'Bellota Text', cursive;
   color: #000000;
-  font-size: 24px;
 
 }
 #main_text
 {
-  font-family: 'Merriweather', serif;
-  color: #000000;
-  font-size: 18px;
+
   width: 35%;
   text-align: center;
+  color: #000000;
+  font: normal normal normal 18px 'Merriweather', serif;
+
+}
 
 }
 footer
 {
-
     display: flex;
     flex-direction: row;
     height: 195px;
@@ -241,28 +308,58 @@ footer
   }
   #text_half_screen
   {
-    margin: 0px auto;
-    height: 280px;
+    margin: 5px auto;
+    height: 380px;
     width: 100%;
   }
   #main_text
   {
-    font-family: 'Merriweather', serif;
-    color: #000000;
-    font-size: 18px;
     width: 85%;
     text-align: center;
+    color: #000000;
+    font: normal normal normal 18px 'Merriweather', serif;
 
   }
   footer
   {
     height: 80px;
   }
+  #text_full_screen
+  {
+    position: absolute;
+    margin: 10% auto;
+    height: 385px;
+    text-align: center;
+  }
+  p
+  {
+    margin: 0px auto;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    font: italic normal normal 24px 'Bellota Text', cursive;
+  }
+  h2
+  {
+    margin: 0px auto;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    font: italic normal normal 45px 'Bellota Text', cursive;
+  }
+  a {
+
+    font: normal normal normal 18px 'Bellota Text', cursive;
+  }
 
 }
 
 @media screen and (max-width: 400px)
 {
+  #container_full_screen_1, #container_full_screen_2, #container_full_screen_3,
+  #container_full_screen_1::before, #container_full_screen_2::before, #container_full_screen_3::before
+  {
+    width: 100%;
+    height: 385px;
+  }
   header
   {
     height: 60px;
@@ -272,6 +369,30 @@ footer
   {
     height: 80px;
   }
+/*  #text_full_screen
+  {
+    width: 100%;
+    margin: 10% auto;
+    height: 385px;
+    text-align: center;
+  }
+  p
+  {
+    margin: 0px auto;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    font: italic normal normal 24px 'Bellota Text', cursive;
+  }
+  h2
+  {
+    margin: 0px auto;
+    text-transform: uppercase;
+    color: #F2F2F2;
+    font: italic normal normal 36px 'Bellota Text', cursive;
+  }
+  a {
 
+    font: normal normal normal 18px 'Bellota Text', cursive;
+  }*/
 
 }

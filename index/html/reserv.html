@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>sweet night</title>
+    <link rel="icon" type="image/png" href="..\img\icon.png">
+    <link rel="stylesheet" href="..\css\reserv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <header>sweet night</header>
+  </head>
+  <body>
+    <div id="container_horizontal_screen"></div>
+
+    <form class="transparent" action="mailto:_email" enctype="text/plain">
+     <div class="form-inner">
+      <h3>Забронировать место</h3>
+       <label for="_name">Имя</label>
+       <input required type="text" id="_name">
+       <label for="_tel">Номер телефона</label>
+       <input required type="tel" id="_telephone">
+       <label for="_email">Email</label>
+       <input type="email" id="_email">
+       <label for="_place">Место</label>
+       <input type="text" id="_place">
+       <label for="_date">Дата</label>
+       <input required type="date" id="_date">
+       <label for="_datetime">Время</label>
+       <input required type="time" id="_datetime">
+       <input type="submit" value="Отправить">
+    </div>
+   </form>
+    <br>
+
+    <footer></footer>
+    <!--
+    <html>
+    <head>
+    <title>Форма заявки с сайта</title>
+    </head>
+    <body>
+    <?php
+    //проверяем, существуют ли переменные в массиве POST
+    if(!isset($_POST['fio']) and !isset($_POST['email'])){
+     ?> <form class="transparent" action="form.php" method="post">
+      <div class="form-inner">
+       <h3>Забронировать место</h3>
+        <label for="_name">Имя</label>
+        <input required type="text" id="_name">
+        <label for="_tel">Номер телефона</label>
+        <input required type="tel" id="_telephone">
+        <label for="_email">Email</label>
+        <input type="email" id="_email">
+        <label for="_place">Место</label>
+        <input type="text" id="_place">
+        <label for="_date">Дата</label>
+        <input required type="date" id="_date">
+        <label for="_datetime">Время</label>
+        <input required type="time" id="_datetime">
+        <input type="submit" value="Отправить">
+     </div>
+    </form><?php
+    } else {
+    $_name = $_POST['_name'];
+    $_email = $_POST['_email'];
+    $_name = htmlspecialchars($_name);
+    $_email = htmlspecialchars($_email);
+    $_name = urldecode($_name);
+    $_email = urldecode($_email);
+    $_name = trim($_name);
+    $_email = trim($_email);
+    //echo $fio;
+    //echo "<br>";
+    //echo $email;
+    if (mail($_email, "Заявка с сайта", "ФИО:".$_name.))
+     {     echo "сообщение успешно отправлено";
+    } else {
+        echo "при отправке сообщения возникли ошибки";
+    }
+    ?>
+    </body>
+    </html>-->
+
+
+
+  </body>
+
+</html>
