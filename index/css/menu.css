@@ -22,7 +22,7 @@ body
 {
   margin: 0px;
   background-color: #f2f2f2;
-  min-width: 320px;
+  min-width: 100%;
 }
 footer
 {
@@ -43,13 +43,15 @@ footer
 
 #container_horizontal_screen
 {
+  position:relative;
   display: flex;
-  background: url("..//img/pexels-photo-1279330.jpeg");
+  background: url("../img/pexels-photo-1279330.jpeg");
+   /*background: url("../img/pexels-photo-1279330.jpeg") center center cover no-repeat fixed;*/
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  width: 100%;
+  min-width: 100%;
   height: 385px;
 
 /*  display: flex;
@@ -65,8 +67,8 @@ footer
 #container_horizontal_screen::before
 {
   content: " ";
+  min-width: 100%;
   position: absolute;
-  width: 100%;
   height: 385px;
   background: rgba(0, 0, 0, 0.35);
 }
@@ -90,7 +92,8 @@ footer
    grid-gap:2vw;
    width: 80%;
    max-width: 1230px;
-   margin: auto;
+   margin:
+   auto;
  }
  #menu_block
  {
@@ -127,14 +130,17 @@ footer
      object-fit: cover;
    }
 
-  a {
+   .button-wrapper{
+     display: flex;
+     justify-content: center;
+   }
+ a {
     text-decoration: none;
     outline: none;
     display: inline-block;
     padding: 10px 50px;
-  /*  margin: 10px 20px;*/
-  /*  padding: 20px 30px;*/
-    margin: 10px 40% 30px 40%;
+    margin: 10px 20px;
+  /*  margin: 10px auto;*/
     position: relative;
     color: black;
     border: 1px solid black;
@@ -169,16 +175,19 @@ footer
   a:hover:before,
   a:hover:after{
     height: 100%;
-    width: 100%;
+     width: 100%;
     opacity: 1;
   }
   a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
   a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
   a:hover {background: rgba(0, 0, 0, 0.05);}
- @media screen and (max-width: 768px)
+
+
+ @media screen and (max-width: 780px)
  {
    #container_horizontal_screen, #container_horizontal_screen::before
    {
+
      height: 285px;
    }
 
@@ -189,13 +198,6 @@ footer
        justify-content: center;
        margin: 0px 124px 0px 124px;
    }
-
-
- }
-
- @media screen and (max-width: 780px)
- {
-
    #menu_block
    {
      margin: 0 auto;
