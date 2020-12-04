@@ -14,6 +14,64 @@ header
     text-transform: uppercase;
     font-size: 30px;
 }
+.header{}
+.header__body{}
+.header__burger{}
+.container{}
+.menu
+{
+  width: 100%; /* Full width */
+
+  position: fixed;
+  top: 10;
+  overflow: hidden;
+  z-index: 999;
+}
+.menu_list
+{
+  display: flex;
+    max-height: 45px;
+}
+.menu_list li
+{
+  list-style: none;
+
+}
+.menu_link
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal normal normal 24px 'Bellota Text', cursive;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+  /*.menu a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font: normal normal normal 24px 'Bellota Text', cursive;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.2s ease-in-out;
+  }*/
+  .menu a:hover,
+  .menu a.active {
+    color: #666363;
+    transition: color 0.2s ease-in-out;
+  }
+
+
+
 
 footer
 {
@@ -30,7 +88,7 @@ footer
   text-transform: uppercase;
   font-size: 30px;
 }
-*
+*, ::after, ::before
 {
   box-sizing: border-box;
 }
@@ -287,9 +345,9 @@ margin: 0px auto;
   color: #000000;
   font: normal normal normal 18px 'Merriweather', serif;
 }
-.menu
+/*.menu
 {
-  max-width: 100%; /* Full width */
+  max-width: 100%;
   max-height: 45px;
   position: fixed;
   top: 10;
@@ -315,35 +373,9 @@ margin: 0px auto;
   color: #666363;
   transition: color 0.2s ease-in-out;
 }
-.container
-{
-  display: inline-block;
-  cursor: pointer;
+*/
 
-}
 
-.bar1, .bar2, .bar3 {
-  width: 30px;
-  height: 3px;
-  margin: 4px 0;
-  transition: 0.4s;
-  background-color: #333;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px) ;
-}
 @media screen and (max-width: 1024px)
 {
   .menu a {

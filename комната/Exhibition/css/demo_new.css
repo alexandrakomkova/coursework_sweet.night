@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	background: #cecece;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.table
+{
+  position: fixed;
+  flex: none;
+	max-width: 17%;
+  max-height: 38%;
+
+}
+.table__img_1
+{
+
+  margin-top: 75vh;
+  transform: translate3d(150px, 0, -2750px);
+}
+
+.table__img_2
+{
+
+  margin-top: 70vh;
+  transform: translate3d(230px, 0, -1100px);
+}
+.table__img_3
+{
+  margin-top: 70vh;
+  transform: translate3d(220px, 0, -370px);
+}
+.table__img_4
+{
+  margin-top: 70vh;
+  transform: translate3d(220px, 0, 200px);
+}
+
+
+.table__img_5
+{
+  margin-top: 70vh;
+  transform: translate3d(1050px, 0, 200px);
+}
+.table__img_6
+{
+  margin-top: 70vh;
+    transform: translate3d(1050px, 0, -370px);
+}
+.table__img_7
+{
+  margin-top: 70vh;
+  transform: translate3d(1050px, 0, -1100px);
+}
+.table__img_8
+{
+  margin-top: 75vh;
+  transform: translate3d(1130px, 0, -2800px);
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	perspective: 2000px;
+}
+
+
+.room {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100vw;
+	height: 100vh;
+	margin: -50vh 0 0 -50vw;
+	pointer-events: none;
+	opacity: 0;
+	transform-style: preserve-3d;
+}
+
+.room--current {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.room__side {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+}
+
+.room__side--left,
+.room__side--right {
+	width: 4000px; /* depth */
+	height: 100vh;
+	background: #dbdbdb;
+}
+
+.room__side--back {
+
+	width: 100vw;
+	height: 100vh;
+	background: #e9e9e9;
+	box-shadow: 0 0 0 2px #e9e9e9;
+	/*transform: translate3d(0, 0, -4000px) rotate3d(1,0,0,0.1deg) rotate3d(1,0,0,0deg);*/
+	transform: translate3d(0, 0, -4000px);
+	/* Rotation due to rendering bug in Chrome when loader slides up (images seem cut off) */
+}
+
+.room__side--right {
+	right: 0;
+	justify-content: flex-end;
+	transform: rotate3d(0, 1, 0, -90.00deg);
+	transform-origin: 100% 50%;
+}
+
+.room__side--left {
+	justify-content: flex-start;
+	transform: rotate3d(0, 1, 0, 90deg);
+	transform-origin: 0 50%;
+}
+
+.room__side--bottom {
+	width: 100vw; /* depth */
+	height: 4000px;
+	background: #d0d0d0;
+	transform: rotate3d(1, 0, 0, 90deg) translate3d(0, -4000px, 0);
+	transform-origin: 50% 0%;
+	top: 100%;
+}
+
+
+
+/* Inner elements */
+.room__img {
+
+	flex: none;
+	max-width: 40%;
+  max-height: 60%;
+	margin: 0 5%;
+	transform: translate3d(0,0,10px);
+	backface-visibility: hidden;
+}
+.room__img--back {
+
+	flex: none;
+	max-width: 60%;
+  max-height: 90%;
+	margin: 0 5%;
+	transform: translate3d(0,0,10px);
+	backface-visibility: hidden;
+}
