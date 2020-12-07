@@ -9,9 +9,25 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
-    <header>sweet night</header>
+    <header class="header">
+      <div class="header_body">
+       <p class="header_name">sweet night</p>
+          <div class="header__burger"><!--header__burger-->
+            <span></span>
+          </div><!--header__burger-->
+        </div>
+      </header>
   </head>
   <body>
+    <div class="menu">
+      <ul class="menu_list">
+      <li><a class="menu_link" href="../html/index.html">главная</a></li>
+      <li><a class="menu_link" href="../html/about_us.html">о нас</a></li>
+      <li><a class="menu_link active" href="../html/menu.html">меню</a></li>
+      <li><a class="menu_link" href="../html/reserv.html">бронировать</a></li>
+    </ul>
+    </div>
+    <div class="content">
     <div id="container_horizontal_screen"></div>
 
     <div id="text_horizontal_screen">
@@ -129,6 +145,9 @@
     <div class="button-wrapper">
      <a href="">бронь</a>
     </div>
+    </div>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/index_copy.js"></script>
   </body>
 </html>

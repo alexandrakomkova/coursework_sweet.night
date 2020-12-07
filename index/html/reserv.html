@@ -10,12 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-    <header>sweet night</header>
+    <header class="header">
+      sweet night
+          <div class="header__burger"><!--header__burger-->
+            <span></span>
+          </div><!--header__burger-->
+      </header>
   </head>
   <body>
+    <div class="menu">
+      <ul class="menu_list">
+      <li><a class="menu_link" href="../html/index.html">главная</a></li>
+      <li><a class="menu_link" href="../html/about_us.html">о нас</a></li>
+      <li><a class="menu_link" href="../html/menu.html">меню</a></li>
+      <li><a class="menu_link active" href="../html/reserv.html">забронировать</a></li>
+    </ul>
+    </div>
+    <div class="content">
     <div id="container_horizontal_screen"></div>
 
-    <form class="transparent" action="mailto:_email" enctype="text/plain">
+    <div id="text_horizontal_screen">
+    SWEET NIGHT- это высококачественный ресторан определенно
+    достойный вашего внимания. Уютный интерьер и изысканная кухня
+    сделают ваш обед или ужин незабываемым. Мы рады нашим гостям
+    и всегда стремимся их приятно удивить.</div>
+    
+    <form class="transparent" >
      <div class="form-inner">
       <h3>Забронировать место</h3>
        <label for="_name">Имя</label>
@@ -34,58 +54,10 @@
     </div>
    </form>
     <br>
-
+  </div>
     <footer></footer>
-    <!--
-    <html>
-    <head>
-    <title>Форма заявки с сайта</title>
-    </head>
-    <body>
-    <?php
-    //проверяем, существуют ли переменные в массиве POST
-    if(!isset($_POST['fio']) and !isset($_POST['email'])){
-     ?> <form class="transparent" action="form.php" method="post">
-      <div class="form-inner">
-       <h3>Забронировать место</h3>
-        <label for="_name">Имя</label>
-        <input required type="text" id="_name">
-        <label for="_tel">Номер телефона</label>
-        <input required type="tel" id="_telephone">
-        <label for="_email">Email</label>
-        <input type="email" id="_email">
-        <label for="_place">Место</label>
-        <input type="text" id="_place">
-        <label for="_date">Дата</label>
-        <input required type="date" id="_date">
-        <label for="_datetime">Время</label>
-        <input required type="time" id="_datetime">
-        <input type="submit" value="Отправить">
-     </div>
-    </form><?php
-    } else {
-    $_name = $_POST['_name'];
-    $_email = $_POST['_email'];
-    $_name = htmlspecialchars($_name);
-    $_email = htmlspecialchars($_email);
-    $_name = urldecode($_name);
-    $_email = urldecode($_email);
-    $_name = trim($_name);
-    $_email = trim($_email);
-    //echo $fio;
-    //echo "<br>";
-    //echo $email;
-    if (mail($_email, "Заявка с сайта", "ФИО:".$_name.))
-     {     echo "сообщение успешно отправлено";
-    } else {
-        echo "при отправке сообщения возникли ошибки";
-    }
-    ?>
-    </body>
-    </html>-->
-
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/index_copy.js"></script>
   </body>
 
 </html>

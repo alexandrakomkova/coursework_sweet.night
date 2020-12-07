@@ -409,7 +409,7 @@ margin: 0px auto;
    top:-100%;
    opacity: 0.8;
    background-color: black;
-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
  }
  .menu_list
  {

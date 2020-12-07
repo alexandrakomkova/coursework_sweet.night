@@ -1,28 +1,69 @@
 header
 {
-
-    display: flex;
-    flex-direction: row;
-    height: 95px;
-    min-width: 360px;
-    min-height: 60px;
-    align-items: center;
-    justify-content: center;
-    background-color: #000000;
-    font-family: 'Satisfy', cursive;
-    color: #f2f2f2;
-    text-transform: uppercase;
-    font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  height: 95px;
+  min-width: 360px;
+  min-height: 60px;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  font-family: 'Satisfy', cursive;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-size: 30px;
+  position:relative;
+  z-index: 4;
 }
-*
+*, ::after, ::before
 {
   box-sizing: border-box;
+}.header__burger
+{
+  display: none;
+}
+.menu
+{
+  width: 100%; /* Full width */
+  position: fixed;
+  top: 10;
+  overflow: hidden;
+  z-index: 99;
+}
+.menu_list
+{
+  display: flex;
+  height: 40px;
+}
+.menu_list li
+{
+  list-style: none;
+
+}
+.menu_link
+{
+  left: 0;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin: 5px 20px 0px 0px; /*верх-право-низ-лево*/
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal normal normal 24px 'Bellota Text', cursive;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease-in-out;
 }
 body
 {
   margin: 0px;
   background-color: #f2f2f2;
   min-width: 100%;
+}
+.menu a:hover,
+.menu a.active {
+  color: #666363;
+  transition: color 0.2s ease-in-out;
 }
 footer
 {
@@ -40,7 +81,18 @@ footer
     text-transform: uppercase;
     font-size: 30px;
 }
-
+#text_horizontal_screen
+{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  margin: 30px 224px 0px 224px;/*верх-право-низ-лево*/
+  height: 200px;
+  font-family: 'Bellota Text', cursive;
+  color: #000000;
+  font-size: 30px;
+}
 #container_horizontal_screen
 {
   display: flex;
@@ -150,3 +202,241 @@ footer
   transform: rotate(45deg);
 }
 .form-inner input[type="submit"] {background: #1762EE;}
+
+@media screen and (max-width: 1024px)
+{
+  #text_horizontal_screen
+  {
+      height: 150px;
+      font-size: 20px;
+      margin: 0px 50px 0px 50px;/*верх-право-низ-лево*/
+  }
+  .menu a {
+      padding: 4px 7px;
+      font: normal normal normal 18px 'Bellota Text', cursive;
+  }
+  .menu a:hover,
+  .menu a.active
+  {
+    color: #666363;
+    transition: color 0.2s ease-in-out;
+  }
+  .transparent {
+
+    max-width: 700px;
+    padding: 60px 60px;
+    margin: 20px auto 0;
+    background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px)
+{
+  .transparent {
+    margin: 20px auto 0;
+    background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+    background-size: cover;
+  }
+  #text_horizontal_screen
+  {
+      font-size: 20px;
+      margin: 10px 100px 0px 100px;/*верх-право-низ-лево*/
+      height: 150px;
+  }
+  #container_horizontal_screen, #container_horizontal_screen::before
+  {
+
+    height: 285px;
+  }
+  header
+  {
+    position: relative;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+  }
+ .menu
+ {
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top:-100%;
+   opacity: 0.8;
+   background-color: black;
+transition: all 0.3s ease 0s;
+ }
+ .menu_list
+ {
+   position: relative;
+   z-index: 3;
+   display: block;
+   padding-top: 100px
+ }
+  .menu a
+  {
+      font: normal normal normal 30px 'Bellota Text', cursive;
+      margin-bottom: 10px;
+  }
+  .menu a.active
+  {
+    color: #FACF1A;
+  }
+  .header__burger
+  {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 4;
+  }
+  .header__burger::after,
+  .header__burger::before,
+  .header__burger span
+  {
+    content: " ";
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 0.5px;
+    margin-left: 250px;
+    transition: all 0.3s ease 0s;
+  /*  margin: 0px 0px 0px 250px;*/
+  }
+  .header__burger::after
+  {
+    bottom: 0;
+
+  }
+  .header__burger::before
+  {
+    top: 0;
+
+  }
+  .header__burger span
+  {
+    top: 9px;
+
+  }
+ .content
+ {
+   margin-top: 60px;
+ }
+ .header__burger.active::before
+ {
+   transform: rotate(45deg);
+   top: 9px;
+
+ }
+ .header__burger.active::after
+ {
+   transform: rotate(-45deg);
+   bottom: 9px;
+
+ }
+ .header__burger.active span
+ {
+   display: none;
+ }
+ .menu.active
+ {
+   top:0;
+    z-index: 3;
+
+ }
+body.stop_scroll
+{
+  overflow: hidden;
+}
+  footer
+  {
+    height: 80px;
+  }
+
+}
+@media screen and (max-width: 640px)
+{
+  #text_horizontal_screen
+  {
+      height: 140px;
+      font-size: 14px;
+      margin: 0px 30px 0px 30px;/*верх-право-низ-лево*/
+  }
+  .transparent {
+    max-width: 520px;
+    padding: 30px 25px;
+    margin: 0px auto 0;
+    background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+    background-size:contain;
+  }
+  #container_horizontal_screen, #container_horizontal_screen::before
+  {
+    height: 185px;
+  }
+  .menu a
+  {
+      font: normal normal normal 18px 'Bellota Text', cursive;
+  }
+  .header__burger::after,
+  .header__burger::before,
+  .header__burger span
+  {
+    content: " ";
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 0.5px;
+    margin-left: 190px;
+    transition: all 0.3s ease 0s;
+  /*  margin: 0px 0px 0px 250px;*/
+  }
+
+}
+@media screen and (max-width: 400px)
+{
+  #text_horizontal_screen
+  {
+      font-size: 14px;
+      align-items:center;
+      justify-content: center;
+      text-align: center;
+      margin: 0px 20px 0px 20px;
+  }
+  .transparent {
+    max-width: 360px;
+    padding: 20px 25px;
+    margin: 20px auto 0;
+    background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+    background-size:contain;
+  }
+  .header__burger::after,
+  .header__burger::before,
+  .header__burger span
+  {
+    content: " ";
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 0.5px;
+    margin-left: 60px;
+    transition: all 0.3s ease 0s;
+  /*  margin: 0px 0px 0px 250px;*/
+  }
+
+  header
+  {
+    height: 60px
+    position: fixed;
+  }
+
+  footer
+  {
+    height: 80px;
+  }
+
+
+}
