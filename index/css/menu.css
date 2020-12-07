@@ -99,7 +99,7 @@ body.stop_scroll
 {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 50%;
   top:-100%;
   left: 0;
   opacity: 0.8;
@@ -121,7 +121,6 @@ body.stop_scroll
   z-index: 3;
   display: block;
   padding-top: 100px;
-
 }
 .menu a
 {
@@ -138,12 +137,14 @@ body.stop_scroll
 }
 .menu_link
 {
-
   display: flex;
   justify-content:center;
-color: #f2f2f2;
+  color: #f2f2f2;
   text-align: center;
-  margin: 5px 0px 0px 0px; /*верх-право-низ-лево*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  /*margin: 5px 0px 0px 0px; /*верх-право-низ-лево*/
   text-decoration: none;
   text-transform: uppercase;
   font: normal normal normal 24px 'Bellota Text', cursive;
@@ -160,7 +161,6 @@ color: #f2f2f2;
 
 footer
 {
-
     display: flex;
     flex-direction: row;
     height: 195px;
@@ -213,7 +213,6 @@ footer
    align-items:center;
    justify-content: center;
    margin: 0px 224px 0px 224px;
-
    height: 332px;
    font-family: 'Bellota Text', cursive;
    color: #000000;
@@ -317,42 +316,7 @@ footer
   .button-wrapper a:hover {background: rgba(0, 0, 0, 0.05);}
 
 
- @media screen and (max-width: 780px)
- {
-   #container_horizontal_screen, #container_horizontal_screen::before
-   {
 
-     height: 285px;
-   }
-
-   #text_horizontal_screen
-   {
-       font-size: 24px;
-       align-items:center;
-       justify-content: center;
-       margin: 0px 124px 0px 124px;
-   }
-   #menu_block
-   {
-     margin: 0 auto;
-     height: 290px;
-     width: 300px;
-
-   }
-   #menu_block img
-   {
-
-     height: 290px;
-     width: 300px;
-
-   }
-   #menu_block:hover p {
-
-       height: 320px;
-       width: 340px;
-   }
-
- }
 
  @media screen and (max-width: 1024px)
  {
@@ -372,22 +336,44 @@ footer
        font-size: 20px;
        margin: 0px 50px 0px 50px;/*верх-право-низ-лево*/
    }
-   .header__burger::after,
-   .header__burger::before,
-   .header__burger span
-   {
-     content: " ";
-     background: white;
-     position: absolute;
-     width: 100%;
-     height: 2px;
-     border-radius: 0.5px;
-     transition: all 0.3s ease 0s;
-   /*  margin: 0px 0px 0px 250px;*/
-   }
+
+
  }
  @media screen and (max-width: 768px)
  {
+
+     #container_horizontal_screen, #container_horizontal_screen::before
+     {
+
+       height: 285px;
+     }
+
+     #text_horizontal_screen
+     {
+         font-size: 24px;
+         align-items:center;
+         justify-content: center;
+         margin: 0px 124px 0px 124px;
+     }
+     #menu_block
+     {
+       margin: 0 auto;
+       height: 290px;
+       width: 300px;
+
+     }
+     #menu_block img
+     {
+
+       height: 290px;
+       width: 300px;
+
+     }
+     #menu_block:hover p {
+
+         height: 320px;
+         width: 340px;
+     }
    header
    {
      position: relative;
@@ -400,7 +386,7 @@ footer
   .menu
   {
     width: 100%;
-    height: 100%;
+    height: 50%;
     left: 0;
     top:-100%;
     opacity: 0.8;
@@ -412,11 +398,12 @@ footer
     position: relative;
     z-index: 3;
     display: block;
-    padding-top: 100px
+    padding-top: 100px;
+
   }
    .menu a
    {
-       font: normal normal normal 30px 'Bellota Text', cursive;
+       font: normal normal normal 24px 'Bellota Text', cursive;
        margin-bottom: 10px;
    }
    .menu a.active
@@ -546,6 +533,14 @@ footer
   {
     height: 100px;
   }
+  header
+  {
+    font-size: 24px;
+  }
+  .menu
+  {
+    height: 100%;
+  }
 }
 @media screen and (max-width: 400px)
 {
@@ -565,8 +560,13 @@ footer
   {
     height: 60px;
     position: fixed;
+    font-size: 24px;
   }
-
+  .header_body
+  {
+    margin-left: 35%;
+    width: 60%;
+  }
   footer
   {
     height: 100px;
