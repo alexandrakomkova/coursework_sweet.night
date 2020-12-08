@@ -290,8 +290,31 @@ footer
   box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   transform: rotate(45deg);
 }
-.form-inner input[type="submit"] {background: #1762EE;}
-
+.form-inner input[type="submit"] {background: #1762EE; cursor: pointer;}
+.form-inner button
+{
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  margin: 10px 0 15px;
+  border-width: 0;
+  line-height: 40px;
+  border-radius: 20px;
+  color: white;
+  background: #1762EE;
+  cursor: pointer;
+  font-family: 'Bellota Text',cursive;
+}
+#error
+{
+  display: block;
+  width: 100%;
+  font-family: 'Bellota Text',cursive;
+  padding: 0 15px;
+  margin: 10px 0 15px;
+  border-width: 0;
+  color: white;
+}
 @media screen and (max-width: 1024px)
 {
   #text_horizontal_screen

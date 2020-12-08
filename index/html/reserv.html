@@ -37,29 +37,39 @@
     сделают ваш обед или ужин незабываемым. Мы рады нашим гостям
     и всегда стремимся их приятно удивить.</div>
 
-    <form class="transparent" >
+    <form class="transparent" id="form">
      <div class="form-inner">
       <h3>Забронировать место</h3>
        <label for="_name">Имя</label>
-       <input required type="text" id="_name">
-       <label for="_tel">Номер телефона</label>
-       <input required type="tel" id="_telephone">
+       <input type="text" id="_name">
+
+       <label for="_tel">Номер телефона (например +375440000000)</label>
+       <input type="tel" id="_phone">
+
        <label for="_email">Email</label>
        <input type="email" id="_email">
+
        <label for="_place">Место</label>
        <input type="text" id="_place">
+
        <label for="_date">Дата</label>
-       <input required type="date" id="_date">
+       <input type="date" id="_date">
+
        <label for="_datetime">Время</label>
-       <input required type="time" id="_datetime">
-       <input type="submit" value="Отправить">
+       <input type="time" id="_datetime">
+
+      <!-- <input type="submit" name="button" value="Отправить">--> <!--сделать батон и изменить сабмит на батон чтобы не было перезагрузки-->
+       <button type="button" id="send_mail">Отправить</button>
+       <div id="error"></div>
     </div>
    </form>
     <br>
   </div>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/index_copy.js"></script>
+    <script src="../js/form_mail.js"></script>
   </body>
 
 </html>
