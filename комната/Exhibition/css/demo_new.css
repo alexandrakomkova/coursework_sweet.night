@@ -12,7 +12,8 @@ body {
 
 .table
 {
-  position: fixed;
+  /*position: fixed;*/
+	position:absolute;
   flex: none;
 	max-width: 17%;
   max-height: 38%;
@@ -20,8 +21,8 @@ body {
 }
 .table__img_1
 {
-
-  margin-top: 75vh;
+	top: 75vh;
+  /*margin-top: 75vh;*/
   transform: translate3d(150px, 0, -2750px);
 }
 

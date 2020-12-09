@@ -59,17 +59,12 @@
 
          <div class="room__side room__side--bottom"></div>
 
-         <div>
-           <img class=" table table__img_1" src="../img/table2.png" alt=""/>
-           <img class="table table__img_2" src="../img/table2.png" alt=""/>
-           <img class="table table__img_3" src="../img/table2.png" alt=""/>
-           <img class="table table__img_4" src="../img/table2.png" alt=""/>
-
-
-           <img class="table table__img_5" src="../img/table2side.png" alt=""/>
-           <img class="table table__img_6" src="../img/table2side.png" alt=""/>
-           <img class="table table__img_7" src="../img/table2side.png" alt=""/>
-          <!-- <img class="table table__img_8" src="../img/table2side.png" alt=""/>-->
+         <div class="tables">
+           <img class="table table__img_5" src="../img/table2.png" alt="table 5" onclick="document.getElementById('_place').value='table 5'"/>
+           <img class="table table__img_1" src="../img/table2.png" alt="table 1" onclick="document.getElementById('_place').value='table 1'"/>
+           <img class="table table__img_2" src="../img/table2.png" alt="table 2" onclick="document.getElementById('_place').value='table 2'"/>
+           <img class="table table__img_3" src="../img/table2.png" alt="table 3" onclick="document.getElementById('_place').value='table 3'"/>
+           <img class="table table__img_4" src="../img/table2.png" alt="table 4" onclick="document.getElementById('_place').value='table 4'"/>
          </div>
 
        </div>
@@ -88,7 +83,9 @@
        <input type="email" id="_email">
 
        <label for="_place">Место</label>
-       <input type="text" id="_place">
+       <input type="text" id="_place" >
+      <!-- <a href="javascript:void(0)" onclick="document.getElementById('inp').value='Audi'">Audi</a>
+       <input type="text" size="40" id="inp">-->
 
        <label for="_date">Дата</label>
        <input type="date" id="_date">
