@@ -7,7 +7,7 @@
 body {
 	background: #cecece;
 	height: 100vh;
-
+	overflow: hidden;
 }
 
 .table
@@ -70,12 +70,6 @@ body {
 	width: 100vw;
 	height: 100vh;
 	perspective: 2000px;
-   /*top: 100px;
-  left: 100px;
-  position: relative;
-	width: 100vw;
-	height: 50vh;
-	perspective: 2000px;*/
 }
 
 
