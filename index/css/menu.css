@@ -410,7 +410,6 @@ footer
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap:2vw;
     width: 80%;
-    max-width: 1230px;
     margin: auto;
   }
   #menu_block img
@@ -496,23 +495,27 @@ footer
   }
   #text_horizontal_screen
   {
-      font-size: 14px;
+    height: 250px;
+    font-size: 18px;
       align-items:center;
       justify-content: center;
       text-align: center;
       margin: 0px 20px 0px 20px;
+  }
+  #menu_container
+  {
+      width: 300px;
   }
   #menu_block
   {
     margin: 0 auto;
     height: 290px;
     width: 300px;
-
   }
   #menu_block img
   {
-    height: 320px;
-    width: 340px;
+    height: 290px;
+    width: 300px;
   }
   #menu_block:hover p
   {
@@ -521,6 +524,4 @@ footer
     font: normal normal normal 14px 'Bellota Text', cursive;
     padding: 70px 50px 0px 50px; /*верх-право-низ-лево*/
   }
-
-
 }
