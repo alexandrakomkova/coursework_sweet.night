@@ -154,7 +154,7 @@ body.stop_scroll
 }
 .menu a:hover,
 .menu a.active {
-    color: #FACF1A;
+  color: #FACF1A;
   transition: color 0.2s ease-in-out;
 }
 
@@ -188,14 +188,6 @@ footer
   min-width: 100%;
   height: 385px;
 
-/*  display: flex;
-  background: url("C:/Users/Саша Комкова/Desktop/UNI/курсач/img/menu_intro.jpeg");
-  background-size: cover;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 385px;*/
 
 }
 #container_horizontal_screen::before
@@ -217,6 +209,7 @@ footer
    font-family: 'Bellota Text', cursive;
    color: #000000;
    font-size: 30px;
+   text-align: center;
  }
  #menu_container
  {
@@ -247,7 +240,6 @@ footer
    padding: 50px 30px 10px 30px;
    transition: opacity .5s;
    font: normal normal normal 20px 'Bellota Text', cursive;
-
  }
    #menu_block:hover p {
 
@@ -266,6 +258,7 @@ footer
    .button-wrapper{
      display: flex;
      justify-content: center;
+     margin-bottom: 40px;
    }
  .button-wrapper a {
     text-decoration: none;
@@ -324,12 +317,7 @@ footer
        padding: 4px 7px;
        font: normal normal normal 18px 'Bellota Text', cursive;
    }
-   .menu a:hover,
-   .menu a.active
-   {
-     color: #666363;
-     transition: color 0.2s ease-in-out;
-   }
+
    #text_horizontal_screen
    {
        height: 170px;
@@ -383,101 +371,25 @@ footer
      top: 0;
      z-index: 4;
    }
-  .menu
-  {
-    width: 100%;
-    height: 50%;
-    left: 0;
-    top:-100%;
-    opacity: 0.8;
-    background-color: black;
-    transition: all 0.3s ease 0s;
-  }
-  .menu_list
-  {
-    position: relative;
-    z-index: 3;
-    display: block;
-    padding-top: 100px;
 
-  }
    .menu a
    {
        font: normal normal normal 24px 'Bellota Text', cursive;
        margin-bottom: 10px;
    }
-   .menu a.active
-   {
-     color: #FACF1A;
-   }
-   .header__burger
-   {
-     display: block;
-     width: 30px;
-     height: 20px;
-     position: relative;
-     z-index: 4;
-   }
-   .header__burger::after,
-   .header__burger::before,
-   .header__burger span
-   {
-     content: " ";
-     background: white;
-     position: absolute;
-     width: 100%;
-     height: 2px;
-     border-radius: 0.5px;
-     transition: all 0.3s ease 0s;
-   /*  margin: 0px 0px 0px 250px;*/
-   }
-   .header__burger::after
-   {
-     bottom: 0;
 
-   }
-   .header__burger::before
-   {
-     top: 0;
-
-   }
-   .header__burger span
-   {
-     top: 9px;
-
-   }
   .content
   {
     margin-top: 60px;
   }
-  .header__burger.active::before
-  {
-    transform: rotate(45deg);
-    top: 9px;
 
-  }
-  .header__burger.active::after
-  {
-    transform: rotate(-45deg);
-    bottom: 9px;
-
-  }
-  .header__burger.active span
-  {
-    display: none;
-  }
-  .menu.active
-  {
-    top:0;
-    z-index: 3;
-  }
- body.stop_scroll
- {
-   overflow: hidden;
- }
  .button-wrapper a {
 
    font: normal normal normal 18px 'Bellota Text', cursive;
+ }
+ .button-wrapper {
+   margin-top: 5px;
+   margin-bottom: 10px;
  }
 }
 @media screen and (max-width: 640px)
@@ -512,9 +424,16 @@ footer
     height: 200px;
     width: 210px;
   }
+  #menu_block:hover p
+  {
+    height: 200px;
+    width: 210px;
+    font: normal normal normal 14px 'Bellota Text', cursive;
+    padding: 20px 20px 0px 20px; /*верх-право-низ-лево*/
+  }
   .menu a
   {
-      font: normal normal normal 18px 'Bellota Text', cursive;
+    font: normal normal normal 18px 'Bellota Text', cursive;
   }
   .header__burger::after,
   .header__burger::before,
@@ -592,15 +511,15 @@ footer
   }
   #menu_block img
   {
-
     height: 320px;
     width: 340px;
-
   }
   #menu_block:hover p
   {
-      height: 320px;
-      width: 340px;
+    height: 290px;
+    width: 300px;
+    font: normal normal normal 14px 'Bellota Text', cursive;
+    padding: 70px 50px 0px 50px; /*верх-право-низ-лево*/
   }
 
 
