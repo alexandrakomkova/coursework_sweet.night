@@ -157,19 +157,29 @@ overflow: hidden;
 
 footer
 {
-  display: flex;
-  flex-direction: row;
-  height: 195px;
-  min-width: 360px;
-  min-height: 60px;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000;
-  font-family: 'Satisfy', cursive;
-  color: #f2f2f2;
-  text-transform: uppercase;
-  font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 195px;
+    width: 100%;
+    min-width: 360px;
+    min-height: 60px;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #000000;
+    font: normal normal normal 20px 'Bellota Text', cursive;
+    color: #f2f2f2;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
 }
+footer img
+{
+  cursor: pointer;
+  margin: 0 5px ; /*верх-право-низ-лево*/
+}
+
 
 #container_horizontal_screen
 {
@@ -199,6 +209,7 @@ footer
   margin: 0px 224px 0px 224px;
   text-align: center;
   height: 332px;
+
   font-family: 'Bellota Text',cursive;
   color: #000000;
   font-size: 30px;
@@ -295,6 +306,8 @@ footer
 .button-wrapper{
   display: flex;
   justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 .button-wrapper a {
  text-decoration: none;
@@ -357,11 +370,26 @@ footer
   }
   #text_horizontal_screen_midle
   {
-      /*font-size: 24px;
-      align-items:center;
-      justify-content: center;
-      margin: 0px 124px 0px 124px;*/
-      display: block;
+      display: flex;
+  }
+  #text_horizontal_screen, #text_horizontal_screen_midle
+  {
+      height: 170px;
+      font-size: 20px;
+      margin: 0px 50px 0px 50px;/*верх-право-низ-лево*/
+  }
+  footer
+  {
+    height: 100px;
+    font: normal normal normal 14px 'Bellota Text', cursive;
+    padding: 5%;
+  }
+  footer img
+  {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 0;
   }
 }
 @media screen and (max-width: 768px)
@@ -395,28 +423,19 @@ body.stop_scroll
   {
     height: 285px;
   }
-
   #text_horizontal_screen
   {
-      font-size: 24px;
-      align-items:center;
-      justify-content: center;
-      margin: 0px 124px 0px 124px;
-      height: 380px;
-
+      font-size: 20px;
+      margin: 30px 100px 30px 100px;/*верх-право-низ-лево*/
+      height: 150px;
   }
   #text_horizontal_screen_midle
   {
-      /*font-size: 24px;
-      align-items:center;
-      justify-content: center;
-      margin: 0px 124px 0px 124px;*/
       display: none;
   }
   #container_half_screen
   {
     display: flex;
-    /*flex-direction: column-reverse;*/
     flex-direction: column;
 
   }
@@ -430,7 +449,7 @@ body.stop_scroll
   #text_half_screen
   {
     margin: 0px auto;
-    height: 380px;
+    height: 280px;
     width: 100%;
   }
   #main_text

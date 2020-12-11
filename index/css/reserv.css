@@ -160,15 +160,24 @@ footer
     display: flex;
     flex-direction: row;
     height: 195px;
+    width: 100%;
     min-width: 360px;
     min-height: 60px;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
     background-color: #000000;
-    font-family: 'Satisfy', cursive;
+    font: normal normal normal 20px 'Bellota Text', cursive;
     color: #f2f2f2;
+    padding-left: 10%;
+    padding-right: 10%;
     text-transform: uppercase;
-    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+footer img
+{
+  cursor: pointer;
+  margin: 0 5px ; /*верх-право-низ-лево*/
 }
 #text_horizontal_screen
 {
@@ -530,6 +539,19 @@ footer
     background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
     background-size: cover;
   }
+  footer
+  {
+    height: 100px;
+    font: normal normal normal 14px 'Bellota Text', cursive;
+    padding: 5%;
+  }
+  footer img
+  {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 0;
+  }
 }
 @media screen and (max-width: 768px)
 {
@@ -560,7 +582,6 @@ footer
   }
   #container_horizontal_screen, #container_horizontal_screen::before
   {
-
     height: 285px;
   }
   header
@@ -634,6 +655,19 @@ footer
   .menu
   {
     height: 100%;
+  }
+  footer
+  {
+    height: 100px;
+    font: normal normal normal 14px 'Bellota Text', cursive;
+    padding: 5%;
+  }
+  footer img
+  {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 0;
   }
 
 }

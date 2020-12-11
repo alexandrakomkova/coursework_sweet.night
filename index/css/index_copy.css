@@ -142,24 +142,31 @@ overflow: hidden;
 .menu a:hover,
 .menu a.active {
   color: #FACF1A;
- transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
-
-
 footer
 {
-  display: flex;
-  flex-direction: row;
-  height: 195px;
-  min-width: 360px;
-  min-height: 60px;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000;
-  font-family: 'Satisfy', cursive;
-  color: #f2f2f2;
-  text-transform: uppercase;
-  font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 195px;
+    width: 100%;
+    min-width: 360px;
+    min-height: 60px;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #000000;
+    font: normal normal normal 20px 'Bellota Text', cursive;
+    color: #f2f2f2;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+footer img
+{
+  cursor: pointer;
+  margin: 0 5px ; /*верх-право-низ-лево*/
 }
 *, ::after, ::before
 {
@@ -217,6 +224,7 @@ margin: 0px auto;
 .button-wrapper{
   display: flex;
   justify-content: center;
+
 }
 .button-wrapper a {
  text-decoration: none;
@@ -406,6 +414,19 @@ margin: 0px auto;
     color: #FACF1A;
     transition: color 0.2s ease-in-out;
   }
+  footer
+  {
+    height: 100px;
+    font: normal normal normal 14px 'Bellota Text', cursive;
+    padding: 5%;
+  }
+  footer img
+  {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 0;
+  }
 }
 @media screen and (max-width: 768px)
 {
@@ -445,7 +466,7 @@ margin: 0px auto;
   #text_half_screen
   {
     margin: 5px auto;
-    height: 380px;
+    height: 280px;
     width: 100%;
   }
   #main_text
@@ -455,10 +476,7 @@ margin: 0px auto;
     color: #000000;
     font: normal normal normal 18px 'Merriweather', serif;
   }
-  footer
-  {
-    height: 100px;
-  }
+
   #text_full_screen
   {
     position: absolute;
@@ -480,8 +498,14 @@ margin: 0px auto;
     color: #F2F2F2;
     font: italic normal normal 45px 'Bellota Text', cursive;
   }
+
   .button-wrapper a {
+
     font: normal normal normal 18px 'Bellota Text', cursive;
+  }
+  .button-wrapper {
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 640px)
@@ -498,9 +522,19 @@ margin: 0px auto;
   {
     height: 300px;
   }
+
   footer
   {
     height: 100px;
+    font: normal normal normal 14px 'Bellota Text', cursive;
+    padding: 5%;
+  }
+  footer img
+  {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 0;
   }
 }
 @media screen and (max-width: 400px)
