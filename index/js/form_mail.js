@@ -37,9 +37,6 @@ $("#send_mail").on("click", function(){
 
    var place = "";
 
-
-
-
   if(name == "")
   {
     $("#error").text("Введите ваше имя");

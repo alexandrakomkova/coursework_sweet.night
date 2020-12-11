@@ -2,9 +2,8 @@ header
 {
   display: flex;
   align-items: center;
-  height: 95px;
+  height: 80px;
   width: 100%;
-  max-height: 80px;
   background-color: #000000;
   font-family: 'Satisfy', cursive;
   color: #f2f2f2;
@@ -604,7 +603,8 @@ footer img
   #container_horizontal_screen
   {
     height: 285px;
-    
+    background: url("../img/pexels-chan-walrus-9418611.jpg");
+    background-size: cover;
   }
    #container_horizontal_screen::before
   {
@@ -614,8 +614,6 @@ footer img
 
   header
   {
-    position: relative;
-    height: 60px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -645,6 +643,11 @@ footer img
 }
 @media screen and (max-width: 640px)
 {
+  header
+  {
+    font-size: 24px;
+      height: 60px;
+  }
   .choose_table{display: none;}
   .container__room {display: block;}
   #text_horizontal_screen
@@ -665,10 +668,17 @@ footer img
     background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
     background-size:contain;
   }
-  #container_horizontal_screen, #container_horizontal_screen::before
+  #container_horizontal_screen
+  {
+    height: 185px;
+    background: url("../img/pexels-chan-walrus-9418611.jpg");
+    background-size: cover;
+  }
+  #container_horizontal_screen::before
   {
     height: 185px;
   }
+
   .menu a
   {
       font: normal normal normal 18px 'Bellota Text', cursive;
@@ -728,7 +738,7 @@ footer img
   #text_horizontal_screen
   {
       font-size: 14px;
-      margin: 15px 20px 0px 20px;
+      margin: 20px 20px 0px 20px;/*верх-право-низ-лево*/
   }
   .transparent {
     max-width: 360px;
@@ -738,11 +748,17 @@ footer img
     background-size:contain;
   }
 
+  #container_horizontal_screen
+  {
 
+    background: url("../img/pexels-chan-walrus-9418611.jpg");
+    background-size: contain;
+  }
   header
   {
-    height: 60px
+    height: 60px;
     position: fixed;
+    font-size: 24px;
   }
 
   footer
@@ -755,4 +771,5 @@ footer img
     margin-left: 35%;
     width: 60%;
   }
+
 }

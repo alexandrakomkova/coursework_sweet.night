@@ -2,7 +2,7 @@ header
 {
   display: flex;
   align-items: center;
-  height: 95px;
+  height: 80px;
   width: 100%;
   background-color: #000000;
   font-family: 'Satisfy', cursive;
@@ -222,7 +222,7 @@ footer img
  #menu_container
  {
    display:grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
    grid-gap:2vw;
    width: 80%;
    max-width: 1230px;
@@ -354,16 +354,21 @@ footer img
  }
  @media screen and (max-width: 768px)
  {
+   #container_horizontal_screen
+   {
+     height: 285px;
+     background: url("../img/pexels-photo-1279330.jpeg");
+     background-size: cover;
+   }
 
-     #container_horizontal_screen, #container_horizontal_screen::before
+     #container_horizontal_screen::before
      {
-
        height: 285px;
      }
 
      #text_horizontal_screen
      {
-         font-size: 24px;
+         font-size: 20px;
          align-items:center;
          justify-content: center;
          margin: 0px 124px 0px 124px;
@@ -389,8 +394,7 @@ footer img
      }
    header
    {
-     position: relative;
-     height: 60px;
+
      position: fixed;
      width: 100%;
      top: 0;
@@ -488,6 +492,7 @@ footer img
   }
   header
   {
+      height: 60px;
     font-size: 24px;
   }
   .menu
@@ -511,7 +516,7 @@ footer img
   }
   header
   {
-    height: 60px;
+
     position: fixed;
     font-size: 24px;
   }
@@ -527,8 +532,8 @@ footer img
   }
   #text_horizontal_screen
   {
-    height: 250px;
-    font-size: 18px;
+    height: 170px;
+      font-size: 14px;
       align-items:center;
       justify-content: center;
       text-align: center;

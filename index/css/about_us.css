@@ -4,7 +4,7 @@ header
   align-items: center;
   height: 95px;
   width: 100%;
-  max-height: 80px;
+  height: 80px;
   background-color: #000000;
   font-family: 'Satisfy', cursive;
   color: #f2f2f2;
@@ -13,6 +13,7 @@ header
   position:fixed;
   top: 0;
   z-index: 4;
+
 }
 *, ::after, ::before
 {
@@ -59,7 +60,6 @@ body
 .header__burger::after
 {
   bottom: 0;
-
 }
 .header__burger::before
 {
@@ -396,8 +396,6 @@ footer img
 {
   header
   {
-    position: relative;
-    height: 60px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -409,7 +407,10 @@ footer img
      margin-bottom: 10px;
  }
 
-
+ .content
+ {
+   margin-top: 60px;
+ }
 body.stop_scroll
 {
   overflow: hidden;
@@ -419,9 +420,16 @@ body.stop_scroll
   {
     height: 100px;
   }
-  #container_horizontal_screen, #container_horizontal_screen::before
+  #container_horizontal_screen
   {
     height: 285px;
+    background: url("../img/bc.jpg");
+    background-size: cover;
+  }
+   #container_horizontal_screen::before
+  {
+    height: 285px;
+
   }
   #text_horizontal_screen
   {
@@ -478,6 +486,11 @@ body.stop_scroll
 }
 @media screen and (max-width: 640px)
 {
+  header
+  {
+    font-size: 24px;
+      height: 60px;
+  }
   .menu a
   {
       font: normal normal normal 18px 'Bellota Text', cursive;
@@ -518,12 +531,6 @@ body.stop_scroll
     width: 60%;
   }
 
-  header
-  {
-    font-size: 24px;
-    height: 60px
-    position: fixed;
-  }
 
   footer
   {
@@ -562,8 +569,8 @@ body.stop_scroll
   }
   #text_horizontal_screen
   {
-      height: 250px;
-      font-size: 18px;
+      height: 150px;
+      font-size: 14px;
       align-items:center;
       justify-content: center;
       text-align: center;
