@@ -196,7 +196,7 @@ footer img
 #container_horizontal_screen
 {
   display: flex;
-  background: url("../img/pexels-chan-walrus-9418611.jpg");
+  background: url("../img/reverv_background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -219,7 +219,7 @@ footer img
   max-width: 610px;
   padding: 60px 60px;
   margin: 50px auto 0;
-  background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+  background-image: url(../img/reserv_form.jpg);
   background-size: cover;
 }
 .transparent:before {
@@ -552,7 +552,7 @@ footer img
     max-width: 700px;
     padding: 60px 60px;
     margin: 20px auto 0;
-    background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+    background-image: url(../img/reserv_form.jpg);
     background-size: cover;
   }
   footer
@@ -587,7 +587,7 @@ footer img
   }
   .transparent {
     margin: 20px auto 0;
-    background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+    background-image: url(../img/reserv_form.jpg);
     background-size: cover;
   }
   #text_horizontal_screen
@@ -603,7 +603,7 @@ footer img
   #container_horizontal_screen
   {
     height: 285px;
-    background: url("../img/pexels-chan-walrus-9418611.jpg");
+    background: url("../img/reverv_background.jpg");
     background-size: cover;
   }
    #container_horizontal_screen::before
@@ -665,13 +665,13 @@ footer img
     max-width: 520px;
     padding: 30px 25px;
     margin: 0px auto 0;
-    background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+    background-image: url(../img/reserv_form.jpg);
     background-size:contain;
   }
   #container_horizontal_screen
   {
     height: 185px;
-    background: url("../img/pexels-chan-walrus-9418611.jpg");
+    background: url("../img/reverv_background.jpg");
     background-size: cover;
   }
   #container_horizontal_screen::before
@@ -744,14 +744,14 @@ footer img
     max-width: 360px;
     padding: 20px 25px;
     margin: 20px auto 0;
-    background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
+    background-image: url(../img/reserv_form.jpg);
     background-size:contain;
   }
 
   #container_horizontal_screen
   {
 
-    background: url("../img/pexels-chan-walrus-9418611.jpg");
+    background: url("../img/reverv_background.jpg");
     background-size: contain;
   }
   header

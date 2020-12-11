@@ -184,7 +184,7 @@ footer img
 #container_horizontal_screen
 {
   display: flex;
-  background: url("../img/bc.jpg");
+  background: url("../img/about_us_background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -222,7 +222,7 @@ footer img
 }
 #img_half_screen
 {
- background: url("../img/photo-1571863005528-d4b29307e35a.jpg") no-repeat center center;
+ background: url("../img/reserv_1.jpg") no-repeat center center;
  background-size: cover;
  width: 50%;
  height: 618px;
@@ -269,7 +269,7 @@ footer img
 
 #img_half_screen_2
 {
- background: url("../img/pexels-juan-c-palacios-3438708.jpg") no-repeat center center;
+ background: url("../img/reserv_2.jpg") no-repeat center center;
  background-size: cover;
  width: 50%;
  height: 618px;
@@ -286,7 +286,7 @@ footer img
 
 #img_half_screen_midle
 {
- background: url("../img/photo-1559925393-8be0ec4767c8.jpg") no-repeat center center;
+ background: url("../img/reserv_middle.jpg") no-repeat center center;
  background-size: cover;
  width: 50%;
  height: 618px;
@@ -423,7 +423,7 @@ body.stop_scroll
   #container_horizontal_screen
   {
     height: 285px;
-    background: url("../img/bc.jpg");
+    background: url("../img/about_us_background.jpg");
     background-size: cover;
   }
    #container_horizontal_screen::before

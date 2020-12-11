@@ -187,7 +187,7 @@ footer img
 {
   position:relative;
   display: flex;
-  background: url("../img/pexels-photo-1279330.jpeg");
+  background: url("../img/menu_background.jpeg");
    /*background: url("../img/pexels-photo-1279330.jpeg") center center cover no-repeat fixed;*/
   background-size: cover;
   background-attachment: fixed;
@@ -357,7 +357,7 @@ footer img
    #container_horizontal_screen
    {
      height: 285px;
-     background: url("../img/pexels-photo-1279330.jpeg");
+     background: url("../img/menu_background.jpeg");
      background-size: cover;
    }
 
