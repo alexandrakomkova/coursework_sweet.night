@@ -37,8 +37,7 @@
       достойный вашего внимания. Уютный интерьер и изысканная кухня
       сделают ваш обед или ужин незабываемым. Мы рады нашим гостям
       и всегда стремимся их приятно удивить.<br><br>
-      Нажмите на стол, чтобы забронирвать его!<br>
-
+      Нажмите на стол, чтобы выбрать его для бронирования!<br>
     </div>
       <p class="choose_table">Переверните устройство для комфортного выбора места. :)</p>
 
@@ -64,23 +63,21 @@
          <div class="room__side room__side--bottom"></div>
 
 
-           <img class="table table__img_5" src="../img/table2.png" alt="table 5" onclick="document.getElementById('_place').value='table 5'"/>
-           <img class="table table__img_1" src="../img/table2.png" alt="table 1" onclick="document.getElementById('_place').value='table 1'"/>
-           <img class="table table__img_2" src="../img/table2.png" alt="table 2" onclick="document.getElementById('_place').value='table 2'"/>
-           <img class="table table__img_3" src="../img/table2.png" alt="table 3" onclick="document.getElementById('_place').value='table 3'"/>
-           <img class="table table__img_4" src="../img/table2.png" alt="table 4" onclick="document.getElementById('_place').value='table 4'"/>
-
-
+           <img class="table table__img_5" src="../img/table2.png" alt="table 5" onclick="document.getElementById('_place').value='стол 5'"/>
+           <img class="table table__img_1" src="../img/table2.png" alt="table 1" onclick="document.getElementById('_place').value='стол 1'"/>
+           <img class="table table__img_2" src="../img/table2.png" alt="table 2" onclick="document.getElementById('_place').value='стол 2'"/>
+           <img class="table table__img_3" src="../img/table2.png" alt="table 3" onclick="document.getElementById('_place').value='стол 3'"/>
+           <img class="table table__img_4" src="../img/table2.png" alt="table 4" onclick="document.getElementById('_place').value='стол 4'"/>
        </div>
      </div>
-
+     <div id="chosen_table"></div>
     <form class="transparent" id="form">
      <div class="form-inner">
       <h3>Забронировать место</h3>
        <label for="_name">Имя</label>
        <input type="text" id="_name">
 
-       <label for="_tel">Номер телефона (например +375440000000)</label>
+       <label for="_tel">Номер телефона</label>
        <input type="tel" id="_phone">
 
        <label for="_email">Email</label>

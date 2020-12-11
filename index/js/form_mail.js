@@ -1,3 +1,32 @@
+$(".table").on("click", function(){
+  if($("#_place").val() == "стол 1")
+  {
+    $("#chosen_table").text("Вы выбрали стол №1");
+  }
+  else
+    if($("#_place").val() == "стол 2")
+    {
+      $("#chosen_table").text("Вы выбрали стол №2");
+    }
+    else
+      if($("#_place").val() == "стол 3")
+      {
+        $("#chosen_table").text("Вы выбрали стол №3");
+      }
+      else
+        if($("#_place").val() == "стол 4")
+        {
+          $("#chosen_table").text("Вы выбрали стол №4");
+        }
+        else
+          if($("#_place").val() == "стол 5")
+          {
+            $("#chosen_table").text("Вы выбрали стол №5");
+          }
+});
+
+
+
 $("#send_mail").on("click", function(){
   var name = $("#_name").val().trim(); //трим убирает пробелы
   var phone = $("#_phone").val().trim();//вал берет значение
@@ -8,7 +37,7 @@ $("#send_mail").on("click", function(){
 
    var place = "";
 
-  
+
 
 
   if(name == "")
@@ -17,7 +46,7 @@ $("#send_mail").on("click", function(){
     return false;
   }
   else
-    if(phone == "" || phone.length < 13 || phone == "+375441111111" )
+    if(phone == "" || phone.length < 13 )
     {
       $("#error").text("Введите номер телефона не менее 13 символов");
       return false;

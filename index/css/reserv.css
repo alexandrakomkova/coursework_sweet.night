@@ -193,11 +193,7 @@ footer img
   text-align: center;
 
 }
-.choose_table
-{
-  display: none;
 
-}
 #container_horizontal_screen
 {
   display: flex;
@@ -221,7 +217,7 @@ footer img
 }
 .transparent {
   position: relative;
-  max-width: 600px;
+  max-width: 610px;
   padding: 60px 60px;
   margin: 50px auto 0;
   background-image: url(../img/photo-1547595628-c61a29f496f0.jpg);
@@ -326,10 +322,26 @@ footer img
   display: block;
   width: 100%;
   font-family: 'Bellota Text',cursive;
-  padding: 0 15px;
-  margin: 10px 0 15px;
   border-width: 0;
+  height: 20px;
   color: white;
+}
+.choose_table
+{
+  display: none;
+}
+#chosen_table
+{
+  height: 20px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  margin: 30px 224px 0px 224px;/*верх-право-низ-лево*/
+  font-family: 'Bellota Text', cursive;
+  color: #000000;
+  text-align: center;
 }
 .container__room {
   /*position: relative;
@@ -527,6 +539,11 @@ footer img
       font-size: 20px;
       margin: 10px 50px 0px 50px;/*верх-право-низ-лево*/
   }
+  #chosen_table
+  {
+    font-size: 20px;
+    margin: 0px 50px 0px 50px;/*верх-право-низ-лево*/
+  }
   .menu a {
       padding: 4px 7px;
       font: normal normal normal 18px 'Bellota Text', cursive;
@@ -580,10 +597,21 @@ footer img
       margin: 30px 100px 0px 100px;/*верх-право-низ-лево*/
       height: 150px;
   }
-  #container_horizontal_screen, #container_horizontal_screen::before
+  #chosen_table
+  {   font-size: 20px;
+      margin: 30px 100px 0px 100px;/*верх-право-низ-лево*/
+  }
+  #container_horizontal_screen
   {
     height: 285px;
+    
   }
+   #container_horizontal_screen::before
+  {
+    height: 285px;
+
+  }
+
   header
   {
     position: relative;
@@ -617,12 +645,18 @@ footer img
 }
 @media screen and (max-width: 640px)
 {
+  .choose_table{display: none;}
   .container__room {display: block;}
   #text_horizontal_screen
   {
       height: 140px;
       font-size: 14px;
       margin: 0px 30px 0px 30px;/*верх-право-низ-лево*/
+  }
+  #chosen_table
+  {
+      font-size: 14px;
+      margin: 0px 30px 10px 30px;/*верх-право-низ-лево*/
   }
   .transparent {
     max-width: 520px;
