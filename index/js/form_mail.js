@@ -66,13 +66,6 @@ $("#send_mail").on("click", function(){
       $("#error").text("Введите время для бронирования места");
       return false;
     }
-    else
-      if(place == "")
-      {
-        $("#error").text("Выберите место в зале");
-        return false;
-      }
-
 
     $("#error").text("");
 
