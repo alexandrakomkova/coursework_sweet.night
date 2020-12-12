@@ -5,13 +5,18 @@ header
   height: 80px;
   width: 100%;
   background-color: #000000;
+  position:fixed;
+  top: 0;
+  z-index: 4;
+}
+header a
+{
   font-family: 'Satisfy', cursive;
   color: #f2f2f2;
   text-transform: uppercase;
   font-size: 30px;
-  position:fixed;
-  top: 0;
-  z-index: 4;
+  cursor: pointer;
+  text-decoration: none;
 }
 .header_body
 {
@@ -41,6 +46,7 @@ body
    height: 20px;
    position: relative;
    z-index: 4;
+   cursor: pointer;
  }
  .header__burger::after,
  .header__burger::before,
@@ -493,7 +499,10 @@ footer img
   header
   {
       height: 60px;
-    font-size: 24px;
+  }
+  header a
+  {
+      font-size: 24px;
   }
   .menu
   {
@@ -513,12 +522,6 @@ footer img
     height: 2px;
     border-radius: 0.5px;
     transition: all 0.3s ease 0s;
-  }
-  header
-  {
-
-    position: fixed;
-    font-size: 24px;
   }
   .header_body
   {

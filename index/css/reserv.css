@@ -5,13 +5,18 @@ header
   height: 80px;
   width: 100%;
   background-color: #000000;
+  position:fixed;
+  top: 0;
+  z-index: 4;
+}
+header a
+{
   font-family: 'Satisfy', cursive;
   color: #f2f2f2;
   text-transform: uppercase;
   font-size: 30px;
-  position:fixed;
-  top: 0;
-  z-index: 4;
+  cursor: pointer;
+  text-decoration: none;
 }
 *, ::after, ::before
 {
@@ -40,6 +45,7 @@ body
   height: 20px;
   position: relative;
   z-index: 4;
+  cursor: pointer;
 }
 .header__burger::after,
 .header__burger::before,
@@ -645,8 +651,11 @@ footer img
 {
   header
   {
-    font-size: 24px;
       height: 60px;
+  }
+  header a
+  {
+    font-size: 24px;
   }
   .choose_table{display: none;}
   .container__room {display: block;}
@@ -753,12 +762,6 @@ footer img
 
     background: url("../img/reverv_background.jpg");
     background-size: contain;
-  }
-  header
-  {
-    height: 60px;
-    position: fixed;
-    font-size: 24px;
   }
 
   footer
