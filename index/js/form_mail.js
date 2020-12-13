@@ -5,28 +5,25 @@ $(".table").on("click", function(){
   }
   else
     if($("#_place").val() == "стол 2")
-    {
-      $("#chosen_table").text("Вы выбрали стол №2");
-    }
-    else
-      if($("#_place").val() == "стол 3")
-      {
-        $("#chosen_table").text("Вы выбрали стол №3");
-      }
-      else
-        if($("#_place").val() == "стол 4")
-        {
-          $("#chosen_table").text("Вы выбрали стол №4");
-        }
-        else
-          if($("#_place").val() == "стол 5")
-          {
-            $("#chosen_table").text("Вы выбрали стол №5");
-          }
+  {
+    $("#chosen_table").text("Вы выбрали стол №2");
+  }
+  else
+    if($("#_place").val() == "стол 3")
+  {
+    $("#chosen_table").text("Вы выбрали стол №3");
+}
+  else
+    if($("#_place").val() == "стол 4")
+  {
+    $("#chosen_table").text("Вы выбрали стол №4");
+  }
+  else
+    if($("#_place").val() == "стол 5")
+  {
+    $("#chosen_table").text("Вы выбрали стол №5");
+  }
 });
-
-
-
 $("#send_mail").on("click", function(){
   var name = $("#_name").val().trim(); //трим убирает пробелы
   var phone = $("#_phone").val().trim();//вал берет значение
