@@ -213,7 +213,6 @@ footer img
   margin: 0px 224px 0px 224px;
   text-align: center;
   height: 332px;
-
   font-family: 'Bellota Text',cursive;
   color: #000000;
   font-size: 30px;
@@ -554,7 +553,6 @@ body.stop_scroll
   {
     display: flex;
     /*flex-direction: column-reverse;*/
-
   }
   #container_half_screen > #img_half_screen, #img_half_screen_2,
   #img_half_screen::before, #img_half_screen_2::before
