@@ -158,7 +158,6 @@ overflow: hidden;
   color: #FACF1A;
  transition: color 0.2s ease-in-out;
 }
-
 footer
 {
     display: flex;
@@ -183,8 +182,6 @@ footer img
   cursor: pointer;
   margin: 0 5px ; /*верх-право-низ-лево*/
 }
-
-
 #container_horizontal_screen
 {
   display: flex;
@@ -247,7 +244,6 @@ footer img
   flex-direction: column;
   align-items:center;
   justify-content: center;
-
 }
 #title
 {
@@ -262,12 +258,10 @@ footer img
 }
 #main_text
 {
-
   width: 35%;
   text-align: center;
   color: #000000;
   font: normal normal normal 18px 'Merriweather', serif;
-
 }
 
 #img_half_screen_2
@@ -286,7 +280,6 @@ footer img
   height: 618px;
   background: rgba(0, 0, 0, 0.4);
 }
-
 #img_half_screen_midle
 {
  background: url("../img/reserv_middle.jpg") no-repeat center center;
@@ -297,7 +290,6 @@ footer img
 }
 #img_half_screen_midle::before
 {
-
   content: " ";
   position: absolute;
   width: 50%;
@@ -305,20 +297,18 @@ footer img
   background: rgba(0, 0, 0, 0.4);
   display: none;
 }
-
-.button-wrapper{
+.button_wrapper{
   display: flex;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 40px;
 }
-.button-wrapper a {
+.button_wrapper a {
  text-decoration: none;
  outline: none;
  display: inline-block;
  padding: 10px 50px;
  margin: 10px 20px;
-/*  margin: 10px auto;*/
  position: relative;
  color: black;
  border: 1px solid black;
@@ -327,8 +317,8 @@ footer img
  text-transform: uppercase;
  letter-spacing: 2px;
 }
-.button-wrapper a:before,
-.button-wrapper a:after {
+.button_wrapper a:before,
+.button_wrapper a:after {
  content: "";
  position: absolute;
  width: 0;
@@ -336,29 +326,29 @@ footer img
  opacity: 0;
  box-sizing: border-box;
 }
-.button-wrapper a:before {
+.button_wrapper a:before {
  bottom: 0;
  left: 0;
  border-left: 3px solid black;
  border-top: 3px solid black;
  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
 }
-.button-wrapper a:after {
+.button_wrapper a:after {
  top: 0;
  right: 0;
  border-right: 3px solid black;
  border-bottom: 3px solid black;
  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
 }
-.button-wrapper a:hover:before,
-.button-wrapper a:hover:after{
+.button_wrapper a:hover:before,
+.button_wrapper a:hover:after{
  height: 100%;
-  width: 100%;
+ width: 100%;
  opacity: 1;
 }
-.button-wrapper a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
-.button-wrapper a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
-.button-wrapper a:hover {background: rgba(0, 0, 0, 0.05);}
+.button_wrapper a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.button_wrapper a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+.button_wrapper a:hover {background: rgba(0, 0, 0, 0.05);}
 @media screen and (max-width: 1024px)
 {
   .menu a {
@@ -395,7 +385,7 @@ footer img
     margin: 0 0;
   }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 884px)
 {
   header
   {
@@ -409,7 +399,15 @@ footer img
      font: normal normal normal 30px 'Bellota Text', cursive;
      margin-bottom: 10px;
  }
-
+ .menu
+ {
+   height: 100%;
+ }
+ .menu a
+ {
+     font: normal normal normal 18px 'Bellota Text', cursive;
+     margin-bottom: 10px;
+ }
  .content
  {
    margin-top: 60px;
@@ -477,11 +475,11 @@ body.stop_scroll
     height: 385px;
 
   }
-  .button-wrapper a {
+  .button_wrapper a {
 
     font: normal normal normal 18px 'Bellota Text', cursive;
   }
-  .button-wrapper {
+  .button_wrapper {
     margin-top: 5px;
     margin-bottom: 10px;
   }
@@ -496,14 +494,6 @@ body.stop_scroll
   header a
   {
     font-size: 24px;
-  }
-  .menu a
-  {
-      font: normal normal normal 18px 'Bellota Text', cursive;
-  }
-  .menu
-  {
-    height: 100%;
   }
   #text_half_screen
   {
@@ -529,7 +519,7 @@ body.stop_scroll
     font: italic normal normal 24px 'Bellota Text', cursive;
   }
 }
-@media screen and (max-width: 400px)
+@media screen and (max-width: 420px)
 {
   .header_body
   {
@@ -552,7 +542,6 @@ body.stop_scroll
   #container_half_screen
   {
     display: flex;
-    /*flex-direction: column-reverse;*/
   }
   #container_half_screen > #img_half_screen, #img_half_screen_2,
   #img_half_screen::before, #img_half_screen_2::before

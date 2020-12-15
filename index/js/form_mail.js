@@ -12,7 +12,7 @@ $(".table").on("click", function(){
     if($("#_place").val() == "стол 3")
   {
     $("#chosen_table").text("Вы выбрали стол №3");
-}
+  }
   else
     if($("#_place").val() == "стол 4")
   {
@@ -28,11 +28,9 @@ $("#send_mail").on("click", function(){
   var name = $("#_name").val().trim(); //трим убирает пробелы
   var phone = $("#_phone").val().trim();//вал берет значение
   var email = $("#_email").val().trim();
-  //var place = $("#_place").val().trim();
   var date = $("#_date").val().trim();
+  var place = $("#_place").val();
   var datetime = $("#_datetime").val().trim();
-
-   var place = "";
 
   if(name == "")
   {
@@ -63,8 +61,15 @@ $("#send_mail").on("click", function(){
       $("#error").text("Введите время для бронирования места");
       return false;
     }
+    else
+      if(place == "")
+      {
+        $("#error").text("Выберите место в зале");
+        return false;
+      }
 
     $("#error").text("");
+    $("#chosen_table").text("");
 
     $.ajax({
       url: '../php/mail.php', //куда отправляются наши данные на обработку
@@ -93,7 +98,4 @@ $("#send_mail").on("click", function(){
         $("#send_mail").prop("disabled", false);//делаем кнопку активной т.е снова можно нажимать и отправлять
       }//после отправки данных вызывается
     });
-
-
-
 });

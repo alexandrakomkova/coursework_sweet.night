@@ -226,12 +226,12 @@ margin: 0px auto;
   color: #F2F2F2;
   font: italic normal normal 90px 'Bellota Text', cursive;
 }
-.button-wrapper{
+.button_wrapper{
   display: flex;
   justify-content: center;
 
 }
-.button-wrapper a {
+.button_wrapper a {
  text-decoration: none;
  outline: none;
  display: inline-block;
@@ -246,8 +246,8 @@ margin: 0px auto;
  text-transform: uppercase;
  letter-spacing: 2px;
 }
-.button-wrapper a:before,
-.button-wrapper a:after {
+.button_wrapper a:before,
+.button_wrapper a:after {
  content: "";
  position: absolute;
  width: 0;
@@ -255,29 +255,29 @@ margin: 0px auto;
  opacity: 0;
  box-sizing: border-box;
 }
-.button-wrapper a:before {
+.button_wrapper a:before {
  bottom: 0;
  left: 0;
  border-left: 3px solid #f2f2f2;
  border-top: 3px solid #f2f2f2;
  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
 }
-.button-wrapper a:after {
+.button_wrapper a:after {
  top: 0;
  right: 0;
  border-right: 3px solid #f2f2f2;
  border-bottom: 3px solid #f2f2f2;
  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
 }
-.button-wrapper a:hover:before,
-.button-wrapper a:hover:after{
+.button_wrapper a:hover:before,
+.button_wrapper a:hover:after{
  height: 100%;
   width: 100%;
  opacity: 1;
 }
-.button-wrapper a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
-.button-wrapper a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
-.button-wrapper a:hover {background: rgba(255, 255, 255, 0.05);}
+.button_wrapper a:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.button_wrapper a:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+.button_wrapper a:hover {background: rgba(255, 255, 255, 0.05);}
 
 #container_half_screen
 {
@@ -303,13 +303,8 @@ margin: 0px auto;
 {
   display: flex;
   background: url("../img/intro2.png");
-  /*position	: relative;*/
   width: 100%;
   height: 700px;
-  /*flex-direction: column;
-  align-items: center;
-  justify-content: space-around;*/
-
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -317,7 +312,6 @@ margin: 0px auto;
 }
 #container_full_screen_2::before
 {
-
   content: " ";
   position: absolute;
   width: 100%;
@@ -409,10 +403,7 @@ margin: 0px auto;
 }
 @media screen and (max-width: 1024px)
 {
-  .menu a {
-      padding: 4px 7px;
-      font: normal normal normal 18px 'Bellota Text', cursive;
-  }
+
   .menu a:hover,
   .menu a.active
   {
@@ -433,7 +424,7 @@ margin: 0px auto;
     margin: 0 0;
   }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 884px)
 {
   header
   {
@@ -442,10 +433,14 @@ margin: 0px auto;
     top: 0;
     z-index: 4;
   }
+  .menu
+  {
+    height: 100%;
+  }
   .menu a
   {
-    font: normal normal normal 24px 'Bellota Text', cursive;
-    margin-bottom: 10px;
+      font: normal normal normal 18px 'Bellota Text', cursive;
+      margin-bottom: 10px;
   }
  .content
  {
@@ -502,11 +497,11 @@ margin: 0px auto;
     font: italic normal normal 45px 'Bellota Text', cursive;
   }
 
-  .button-wrapper a {
+  .button_wrapper a {
 
     font: normal normal normal 18px 'Bellota Text', cursive;
   }
-  .button-wrapper {
+  .button_wrapper {
     margin-top: 5px;
     margin-bottom: 10px;
   }
@@ -520,14 +515,6 @@ margin: 0px auto;
   header a
   {
     font-size: 24px;
-  }
-  .menu a
-  {
-      font: normal normal normal 18px 'Bellota Text', cursive;
-  }
-  .menu
-  {
-    height: 100%;
   }
   #text_half_screen
   {
@@ -548,7 +535,7 @@ margin: 0px auto;
     margin: 0 0;
   }
 }
-@media screen and (max-width: 400px)
+@media screen and (max-width: 420px)
 {
   .header_body
   {

@@ -33,34 +33,35 @@
     <div id="container_horizontal_screen"></div>
 
     <div id="text_horizontal_screen">
-      SWEET NIGHT- это высококачественный ресторан определенно
-      достойный вашего внимания. Уютный интерьер и изысканная кухня
-      сделают ваш обед или ужин незабываемым. Мы рады нашим гостям
-      и всегда стремимся их приятно удивить.<br><br>
+      SWEET NIGHT –   это высококачественный ресторан, определенно
+    достойный вашего внимания. Мы предлагаем разнообразное меню,
+    которое включает в себя блюда не только с нежным вкусом,
+    но и с ноткой пикантности. В любое время дня и ночи наш ресторан вас удивит!
+<br><br>
       Нажмите на стол, чтобы выбрать его для бронирования!<br>
     </div>
       <p class="choose_table">Переверните устройство для комфортного выбора места. :)</p>
 
 	   <div class="container__room">
-       <div class="room room--current">
+       <div class="room room_current">
 
-         <div class="room__side room__side--back">
-           <img class="room__img--back" src="../img/window0.jpg" alt="Some image"/>
+         <div class="room__side room__side_back">
+           <img class="room__img_back" src="../img/window0.jpg" alt="Some image"/>
          </div>
 
-         <div class="room__side room__side--left">
+         <div class="room__side room__side_left">
            <img class="room__img" src="../img/window1.jpg" alt="Some image"/>
            <img class="room__img" src="../img/window2.jpg" alt="Some image"/>
            <img class="room__img" src="../img/window6.jpg" alt="Some image"/>
          </div>
 
-         <div class="room__side room__side--right">
+         <div class="room__side room__side_right">
            <img class="room__img" src="../img/window3.jpg" alt="Some image"/>
            <img class="room__img" src="../img/window4.jpg" alt="Some image"/>
            <img class="room__img" src="../img/window5.jpg" alt="Some image"/>
          </div>
 
-         <div class="room__side room__side--bottom"></div>
+         <div class="room__side room__side_bottom"></div>
 
 
            <img class="table table__img_5" src="../img/table2.png" alt="table 5" onclick="document.getElementById('_place').value='стол 5'"/>
@@ -72,7 +73,7 @@
      </div>
      <div id="chosen_table"></div>
     <form class="transparent" id="form">
-     <div class="form-inner">
+     <div class="form_inner">
       <h3>Забронировать место</h3>
        <label for="_name">Имя</label>
        <input type="text" id="_name">
@@ -85,8 +86,6 @@
 
        <label for="_place">Место</label>
        <input type="text" id="_place" >
-      <!-- <a href="javascript:void(0)" onclick="document.getElementById('inp').value='Audi'">Audi</a>
-       <input type="text" size="40" id="inp">-->
 
        <label for="_date">Дата</label>
        <input type="date" id="_date">
@@ -94,14 +93,13 @@
        <label for="_datetime">Время</label>
        <input type="time" id="_datetime">
 
-      <!-- <input type="submit" name="button" value="Отправить">--> <!--сделать батон и изменить сабмит на батон чтобы не было перезагрузки-->
        <button type="button" id="send_mail">Отправить</button>
        <div id="error"></div>
     </div>
    </form>
     <br>
   </div>
-  <div class="button-wrapper">
+  <div class="button_wrapper">
    <a href="../html/index.html">главная</a>
   </div>
     <footer>
