@@ -213,7 +213,6 @@ footer img
 }
 #container_horizontal_screen::before
 {
-
   content: " ";
   position: absolute;
   width: 100%;
@@ -276,37 +275,8 @@ footer img
   background: rgba(255,255,255,.2);
   font-family: 'Bellota Text',cursive;
 }
-.form-inner input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-}
-#custom-checkbox + label {
-  position: relative;
-  margin: 20px 0;
-  text-transform:none;
-  cursor: pointer;
-}
-#custom-checkbox + label:before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  vertical-align: text-top;
-  background: white;
-}
-#custom-checkbox:checked + label:before {background: #1762EE;}
-#custom-checkbox:checked + label:after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  left: 20px;
-  top: 9px;
-  background: white;
-  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-  transform: rotate(45deg);
-}
+
+
 .form-inner input[type="submit"] {background: #1762EE; cursor: pointer;}
 .form-inner button
 {
