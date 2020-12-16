@@ -297,8 +297,6 @@ footer img
   font-family: 'Bellota Text',cursive;
 }
 
-
-.form_inner input[type="submit"] {background: #1762EE; cursor: pointer;}
 .form_inner button
 {
   display: block;
@@ -593,7 +591,7 @@ footer img
  }
 .button_wrapper a:hover {background: rgba(0, 0, 0, 0.05);}
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1050px)
 {
   .choose_table
   {
@@ -623,7 +621,7 @@ footer img
     max-width: 700px;
     padding: 60px 60px;
     margin: 20px auto 0;
-  
+
   }
   footer
   {
@@ -643,7 +641,7 @@ footer img
 {
   .choose_table
   {
-    margin: 0px 20px 0px 20px;/*верх-право-низ-лево*/
+    margin: 10px 20px 0px 20px;/*верх-право-низ-лево*/
     height: 50px;
     font-size: 20px;
   }
@@ -660,7 +658,7 @@ footer img
   }
   #chosen_table
   {   font-size: 20px;
-      margin: 30px 100px 0px 100px;/*верх-право-низ-лево*/
+      margin: 20px 100px 0px 100px;/*верх-право-низ-лево*/
   }
   #container_horizontal_screen
   {
@@ -723,9 +721,9 @@ footer img
   .container__room {display: block;}
   .text_horizontal_screen
   {
-      height: 140px;
+      height: 150px;
       font-size: 14px;
-      margin: 0px 30px 0px 30px;/*верх-право-низ-лево*/
+      margin: 5px 30px 0px 30px;/*верх-право-низ-лево*/
   }
   #chosen_table
   {

@@ -9,7 +9,7 @@
   $subject = "=?utf-8?B?".base64_encode("Заявка на резервирование столика в SWEET NIGHT")."?=";
   $message = "Вы забронировали $place на имя $name\nДата и время:$date\r$time\nСпасибо что выбрали нас!\n♡ ♡ ♡"  ;
   $headers = array(
-    'From' => 'sashakomkova2001@gmail.com',
+    'From' => 'bun.with.cinnabon@gmail.com',
     'Reply-To' => $to,
     'Content-type:'=> 'text/html',
     'charset'=> 'utf-8',

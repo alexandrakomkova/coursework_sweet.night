@@ -226,9 +226,9 @@ footer img
   flex-direction: row;
   align-items:center;
   justify-content: center;
-  margin: 0px 224px 0px 224px;
+  margin: 20px 224px 20px 224px;
   text-align: center;
-  height: 332px;
+  height: 350px;
   font-family: 'Bellota Text',cursive;
   color: #000000;
   font-size: 30px;
@@ -359,7 +359,7 @@ footer img
  -moz-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
  -webkit-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
  -ms-transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;}
- 
+
 .button_wrapper a:after {
  top: 0;
  right: 0;
@@ -427,7 +427,7 @@ footer img
     margin: 0 0;
   }
 }
-@media screen and (max-width: 884px)
+@media screen and (max-width: 920px)
 {
   header
   {
@@ -536,9 +536,9 @@ footer img
   }
   .text_horizontal_screen
   {
-      height: 170px;
+      height: 200px;
       font-size: 18px;
-      margin: 0px 30px 0px 30px;/*верх-право-низ-лево*/
+      margin: 10px 30px 10px 30px;/*верх-право-низ-лево*/
   }
   .main_text
   {
@@ -577,7 +577,7 @@ footer img
   {
     display: flex;
   }
-  .container_half_screen > #img_half_screen, #img_half_screen_2,
+   #img_half_screen, #img_half_screen_2,
   #img_half_screen::before, #img_half_screen_2::before
   {
     width: 100%;
@@ -595,7 +595,7 @@ footer img
   }
   .text_horizontal_screen
   {
-      height: 150px;
+      height: 200px;
       font-size: 14px;
       align-items:center;
       justify-content: center;
